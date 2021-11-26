@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Title</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minus
+      dolorem autem quidem enim quis ea id officiis, deserunt dolore repellat
+      culpa qui nam accusantium recusandae molestias cupiditate natus ad nostrum
+      facere. Atque vero reiciendis repellendus delectus cumque blanditiis et
+      <sup>.</sup>
+    </p>
+    <hr />
+    <style>
+      .scroll-left {
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+        background: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 1px solid orange;
+      }
+      .scroll-left p {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        /* Starting position */
+        transform: translateX(100%);
+        /* Apply animation to this element */
+        animation: scroll-left 15s linear infinite;
+      }
+      /* Move it (define the animation) */
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(50%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+
+    <div class="scroll-left">
+      <p>go down, don't watch the video</p>
+    </div>
+
+    <hr />
+    <h4>My friend</h4>
+    <img src="./erkinbek.jpeg" width="600px" />
+    <hr />
+    <a href="amazon.com">amazon</a>
+    <h4>I <del>kissed</del> like this <mark>girl.</mark></h4>
+    <img
+      width="100%"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScWI4-7m2AHjrRCfKxsVenUTuGJPlgvWQWdQ&usqp=CAU"
+    />
+    <div>
+      <a target href="https://martingarrix.com/">
+        <h1>spinning records</h1>
+        <br />
+        <br />
+        <video width="600px" src="./video.mp4" controls></video>
+      </a>
+    </div>
+    <hr />
+    <br />
+    <br />
+    <h2>If you have some <mark>concerns</mark>, connect to me.</h2>
+    <form>
+      <div>
+        <label for="frame">First Name</label> <br />
+        <input type="text" name="fname" id="fname" /><br />
+        <label for="lname">LastName</label><br />
+        <input type="text" id="lname" name="lastName" /><br />
+        <br />
+        <input type="email" placeholder="email" name="email" /><br /><br />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="message"
+        ></textarea
+        ><br />
+        <br />
+        <label for="country">Choose country</label><br />
+        <select name="country" id="country">
+          <option value="Kyrgyzstan">Kyrgyzstan</option>
+          <option value="Kazakstan">Kazakstan</option>
+          <option value="USA">USA</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
