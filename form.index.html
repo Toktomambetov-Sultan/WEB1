@@ -76,15 +76,65 @@
     <h2>If you have some <mark>concerns</mark>, connect to me.</h2>
     <form>
       <div>
-        <label for="frame">First Name</label> <br />
-        <input type="text" name="fname" id="fname" /><br />
-        <label for="lname">LastName</label><br />
-        <input type="text" id="lname" name="lastName" /><br />
-        <br />
-        <input type="email" placeholder="email" name="email" /><br /><br />
+        <table border="2px" align="center">
+          <tr>
+            <th><label for="name"> Name </label></th>
+            <th>
+              <label for="last_name">Last Name</label>
+            </th>
+            <th>
+              <label for="job">Job</label>
+            </th>
+            <th>
+              <label for="age">age</label>
+            </th>
+            <th>
+              <label for="email">email</label>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <br />
+              <hr />
+              <input type="text" id="name" name="name" placeholder="name" />
+              <hr />
+            </td>
+            <td>
+              <br />
+              <hr />
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                placeholder="last_name"
+              />
+              <hr />
+            </td>
+            <td>
+              <br />
+              <hr />
+              <input type="text" id="job" name="job" placeholder="job" />
+              <hr />
+            </td>
+            <td>
+              <br />
+              <hr />
+              <input type="number" id="age" name="age" placeholder="age" />
+              years
+              <hr />
+            </td>
+            <td>
+              <br />
+              <hr />
+              <input type="email" id="email" name="email" placeholder="email" />
+              <hr />
+            </td>
+          </tr>
+        </table>
+        <br>
         <textarea
           name="message"
-          cols="30"
+          cols="100"
           rows="10"
           placeholder="message"
         ></textarea
@@ -96,6 +146,29 @@
           <option value="Kazakstan">Kazakstan</option>
           <option value="USA">USA</option>
         </select>
+        <ol>
+          <li>
+            <input type="radio" name="phone" id="iphone" value="iphone" />
+            <label for="iphone">Iphone</label>
+          </li>
+          <li>
+            <input type="radio" name="phone" id="HP" value="HP" />
+            <label for="HP">HP</label>
+          </li>
+          <li>
+            <input type="radio" name="phone" id="samsung" value="Samsung" />
+            <label for="samsung">Samsung</label>
+          </li>
+          <li>
+            <input type="radio" name="phone" id="redmi" value="Redmi" />
+            <label for="redmi">redmi</label>
+          </li>
+          <li>
+            <input type="radio" name="phone" id="xiomi" value="Xiomi" />
+            <label for="xiomi">xiomi</label>
+          </li>
+        </ol>
+        <button type="submit">SUBMIT</button>
       </div>
     </form>
   </body>
